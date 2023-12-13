@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escape Game Harry Potter</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f3f3f3;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hover-effect:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .logo {
+        width: 150px;
+        height: auto;
+        margin: 20px;
+    }
+
+    .button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+</style>
+</head>
+<body>
+
+<h1>Félicitations, sorciers et sorcières !</h1>
+<img src="enigme-sorcier.png" alt="Harry Potter Logo" class="logo hover-effect">
+
+<p>Bienvenue dans le monde magique d'Harry Potter. Vous avez brillamment résolu l'escape game !</p>
+
+<!-- Ici, ajoutez plus d'images ou de contenu selon vos préférences -->
+
+<button class="button hover-effect" onclick="revealMessage()">Révélez votre message secret</button>
+
+<p id="secretMessage" style="display:none;">🎉 Surprise ! Voici un message spécial pour vous ! 🎉</p>
+
+<script>
+    function revealMessage() {
+        document.getElementById("secretMessage").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
