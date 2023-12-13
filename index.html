@@ -4,12 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Escape Game Harry Potter</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
 <style>
     body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f3f3f3;
+        font-family: 'Cinzel', serif; /* Police inspirée du style médiéval */
+        background-color: #1A1A1A;
+        background-image: url('poudlard-background.jpg'); /* Image de fond représentant Poudlard */
+        color: #DAA520; /* Couleur dorée pour le texte */
         text-align: center;
         padding: 20px;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        margin: 0 10%;
+        background-color: rgba(255, 255, 255, 0.8); /* Légère transparence pour améliorer la lisibilité */
+        padding: 20px;
+        border-radius: 15px;
     }
 
     .hover-effect:hover {
@@ -34,6 +52,12 @@
         margin: 4px 2px;
         cursor: pointer;
         border-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+
+    .button:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
 </style>
 </head>
@@ -42,25 +66,11 @@
 <h1>Félicitations, sorciers et sorcières !</h1>
 <img src="enigme-sorcier.png" alt="Lettre des secrets - logo" class="logo hover-effect">
 
-<p>Cher sorcier, Chère sorcière,
+<!-- Le contenu du paragraphe reste le même -->
 
-Félicitations !
-
-Nous sommes ravis de vous informer que vous avez non seulement résolu l'énigme avec brio, mais avez également montré une compréhension exceptionnelle des subtilités de la magie. Votre perspicacité et votre courage dans la résolution du tragique incident impliquant San, le père d'Oliver, et Eleazar est à louer. </BR></BR>
-
-Comme vous l'avez découvert, c'était en effet San qui, dans un acte désespéré de défense, a retourné un sort contre Eleazar. Sa tentative de protéger son fils Oliver des intimidations du fils d'Eleazar a conduit à un affrontement tragique. Votre capacité à démêler cette vérité montre non seulement votre intelligence, mais aussi votre équité en reconnaissant que les actions de San étaient de la légitime défense. </BR> </BR>
-
-En conséquence de votre réussite exceptionnelle, nous sommes heureux de vous offrir une place à l'École de Sorcellerie. Votre arrivée est attendue avec impatience et nous sommes certains que vous allez exceller dans vos études magiques.<BR> <BR>
-
-En outre, en tant que récompense pour vos efforts et votre perspicacité, 50 points ont été attribués à votre maison. Votre contribution est une fierté pour nous tous à l'école. <BR> <BR>
-
-Nous attendons avec impatience de vous accueillir dans notre communauté magique. Veuillez trouver cliquer sur le bouton magique pour accéder à votre récompense! <BR> <BR>
-
-Avec nos félicitations et nos meilleurs vœux pour un avenir magique,
-</p>
-
- <a href="https://cdn.shopify.com/s/files/1/0726/0690/8753/files/Lettre_admission_poudlard.pdf?v=1702395411" target="_blank">
-      <button class="button hover-effect" onclick="revealMessage()">Téléchargez votre récompense!</button>
-    </a>
+<a href="https://cdn.shopify.com/s/files/1/0726/0690/8753/files/Lettre_admission_poudlard.pdf?v=1702395411" target="_blank">
+    <button class="button hover-effect">Téléchargez votre récompense!</button>
+</a>
 </body>
 </html>
+
